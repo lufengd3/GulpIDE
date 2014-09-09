@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-width: 800px;
+  background-color: #fafafa;
+}
+
+main ul {
+  list-style: none;
+}
+main ul li {
+  height: 20px;
+}
+main h1 {
+  height: 30px;
+  font-size: 16px;
+}
+#rightContainer {
+  height: 100%;
+  position: absolute;
+  border-right: 1px solid black;
+  right: 160px;
+  left: 0;
+  top: 0;
+}
+#horizonParent {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#project {
+  position: absolute;
+  width: 15%;
+  min-width: 150px;
+  left: 5px;
+  border-right: 1px solid black;
+  padding-left: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+#project ul {
+  padding: 8px;
+}
+.projectFile:before {
+  width: 20px;
+  height: 20px;
+  content: ' ';
+  background: none !important;
+  background-size: 20px 20px;
+  float: left;
+}
+#project li:before {
+  width: 20px;
+  height: 20px;
+  content: ' ';
+  background: url("../img/right-triangle.png") no-repeat;
+  background-size: 20px 20px;
+  float: left;
+}
+#project li {
+  cursor: default; 
+}
+#project .helightProject {
+  background-color: gray;
+}
+#content {
+  position: absolute;
+  right: 0;
+}
+#editorTitleDiv {
+  padding: 0;
+  line-height: 28px;
+  background-color: #3D3D3A;
+  color: #AFAFAF;
+  width: 100%;
+}
+#editorTitle {
+  color: #AFAFAF;
+}
+#fileStatus {
+  color: #AFAFAF;
+  float: right;
+}
+#verticalParent {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+#editor {
+  background-color: #272822;
+  border-bottom: 3px solid #e6e6e6;
+  color: white;
+  padding: 0;
+  overflow: auto;
+  height: 65%;
+  position: absolute;
+  top: 28px;
+}
+.lineNum {
+  -webkit-user-modify: read-only !important;
+  color: white;
+  width: 30px;
+  text-align: right;
+  margin-right: 20px;
+  display: inline-block;
+}
+#logTitle {
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  border-bottom: 1px solid black;
+  display: inherit;
+  top: 0;
+}
+#log {
+  position: absolute;
+  bottom: 8px;
+  overflow: auto;
+}
+#log p {
+  position: absolute;
+  top: 22px;
+  margin-left: 5px;
+}
+#logArea {
+  position: relative;
+}
+.column {
+  height: 100%;
+}
+.row {
+  width: 100%;
+}
+#task {
+  width: 150px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+#task h1 {
+  text-align: left;
+}
+#task li {
+  margin-bottom: 10px;
+}
+#task button {
+  width: 110px;
+}
+#dialog {
+  display: none;
+  width: 266px;
+  height: 140px;
+  border: 2px solid #999;
+  position: absolute;
+  top: 35%;
+  left: 41%;
+  background-color: #fafafa;
+}
+
+.loading {
+  margin: 55px 30px;
+  font-size: large;
+}
+.loading img {
+  vertical-align: middle;
+}

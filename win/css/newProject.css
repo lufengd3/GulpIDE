@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+form {
+  width: 95%;
+  margin: 10px auto;
+}
+form ul {
+  margin: 10px;
+}
+form li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+form li input {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.group {
+  margin-top: 10px;
+}
+.group label {
+  display: inline-block;
+  text-align: right;
+  width: 90px;
+  margin-right: 10px;
+}
+#name {
+  width: 70%;
+}
+#location {
+  width: 52%;
+}
+#browse {
+  margin-left: 20px;
+}
+#libField {
+  overflow: auto;
+  margin-top: 10px;
+  height: 165px;
+}
+#taskField {
+  margin-top: 10px;
+  height: 150px;
+  overflow: auto;
+}
+#ok,
+#cancle {
+  float: right;
+  margin: 20px 0 10px 10px;
+  width: 80px;
+}
+#dialog {
+  display: none;
+  width: 266px;
+  height: 140px;
+  border: 2px solid #999;
+  position: absolute;
+  top: 30%;
+  left: 34%;
+  background-color: #fafafa;
+}
+
+.loading {
+  margin: 55px 30px;
+  font-size: large;
+}
+.loading img {
+  vertical-align: middle;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+	<link type="text/css" rel="stylesheet" href="js/jquery-ui.min.css">
+	<title>GulpDev</title>
+</head>
+<body>
+    <main>
+        <div id="rightContainer">
+            <div id="horizonParent">
+                <div id="project" class="column">
+                    <h1>Projects</h1>
+                    <ul>
+                    </ul>
+                </div>
+                <section id="content" class="column">
+                    <div id="verticalParent">
+                        <div id="editorTitleDiv"> 
+                            <span id="editorTitle" path="">
+                            *
+                            </span>
+                            <span id="fileStatus"></span>
+                        </div>
+                        <div id="editor" contenteditable="true" class="row">
+                            <!-- Node.js version: <script>document.write(process.version);</script> -->
+                        </div>
+                        
+                        <div id="log" class="row">
+                            <div id="logArea">
+                                <div id="logTitle">Gulp Log</div>
+                                <div id="logContent">
+                                    <p></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- verticalParent end -->
+                </section>
+            </div> <!-- horizonParent end -->
+        </div> <!-- rightContainer end -->
+        <section id="task">
+            <h1>Tasks</h1>
+            <ul>
+                <li><button id="action">Start Server</button></li>
+                <li><button id="restart">Restart Server</button></li>
+            </ul>
+        </section>
+        <input type="file" style="display:none" id="newProject" nwdirectory>
+        <input type="file" style="display:none" id="existProject" nwdirectory>
+        <div id="dialog">
+          <div class="loading">
+                Installing npm modules
+                <img src="img/loading.gif">
+          </div>
+        </div>
+    </main>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/create.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

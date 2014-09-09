@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>New Project</title>
+    <link type="text/css" rel="stylesheet" href="css/newProject.css" >
+    <link type="text/css" rel="stylesheet" href="js/jquery-ui.min.css" >
+</head>
+<body>
+    <form>
+        <div id="projectInfo">
+            <div class="group">
+                <label for="name">Project name:</label>
+                <input type="text" id="name" focus/>
+            </div>
+            <div class="group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" disabled/>
+                <input type="file" style="display:inline-block" id="chooseLocation" nwdirectory>
+                <button id="browse" style="display:none">Browse...</button> 
+            </div>
+        </div>
+        <fieldset id="libField">
+            <legend>Add libary</legend>
+            <ul>
+            </ul>
+        </fieldset>
+        <fieldset id="taskField">
+            <legend>Add Task</legend>
+            <ul>
+                <li><input type="checkbox" id="less" value="less">
+                    <label for="less">Less compile<label>
+                </li>
+                <li><input type="checkbox" id="coffee" value="coffee">
+                    <label for="coffee">Coffee Script compile</label>
+                </li>
+                <li><input type="checkbox" id="cssmin" value="cssmin">
+                    <label for="cssmin">Css compress</label>
+                </li>
+                <li><input type="checkbox" id="uglify" value="uglify">
+                    <label for="uglify">Javascript compress</label>
+                </li>
+            </ul>
+        </fieldset>
+        <div id="newProjectAction">
+            <button id="ok">OK</button>
+            <button id="cancle">Cancle</button>
+        </div>
+    </form>
+    
+    <div id="dialog">
+      <div class="loading">
+            Installing npm modules
+            <img src="img/loading.gif">
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <script src="js/newProject.js"></script>
+    <script>
+
+    </script>
+</body>
+</html>

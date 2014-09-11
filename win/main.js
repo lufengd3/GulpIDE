@@ -14,6 +14,9 @@ var gulpProcess;
 var currentProject;
 var projectLiObj;
 var fileStatus = "Edit...";
+var shortcutSave;
+var shortcutNew;
+var shortcutOpen;
 
 init();
 isWin ? delimiter = '\\' : delimiter = '/';
@@ -52,12 +55,9 @@ function init() {
     }
 
     // Create a shortcut with |option|.
-    var shortcutSave = new gui.Shortcut({key : "Ctrl+S"});
-    var shortcutNew = new gui.Shortcut({key : "Ctrl+N"});
-    var shortcutOpen = new gui.Shortcut({key : "Ctrl+O"});
-    /*gui.App.registerGlobalHotKey(shortcutSave);
-    gui.App.registerGlobalHotKey(shortcutNew);
-    gui.App.registerGlobalHotKey(shortcutOpen);*/
+    shortcutSave = new gui.Shortcut({key : "Ctrl+S"});
+    shortcutNew = new gui.Shortcut({key : "Ctrl+N"});
+    shortcutOpen = new gui.Shortcut({key : "Ctrl+O"});
     shortcutSave.on('active', function() {
         saveGulpFile();
     });
@@ -67,7 +67,9 @@ function init() {
     shortcutOpen.on('active', function() {
         openProject();
     });
+    gui.Window.get().focus();
 }
+
 function chooseFolder(name, callback) {
     $(name).trigger('click');
     $(name).change(function() {
@@ -533,7 +535,19 @@ gui.Window.get().on('close', function() {
 	} else {
 		this.close(true);
 	}
-})
+});
+
+gui.Window.get().window.onfocus = function() {
+	gui.App.registerGlobalHotKey(shortcutSave);
+    gui.App.registerGlobalHotKey(shortcutNew);
+    gui.App.registerGlobalHotKey(shortcutOpen);
+}
+
+gui.Window.get().window.onblur = function() {
+	gui.App.unregisterGlobalHotKey(shortcutSave);
+    gui.App.unregisterGlobalHotKey(shortcutNew);
+    gui.App.unregisterGlobalHotKey(shortcutOpen);
+}
 
 $(document).ready(function() {	
     $('#editor').on('blur', function() {

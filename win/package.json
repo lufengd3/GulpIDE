@@ -5,6 +5,7 @@
   "description": "Front-end developer helper",
   "window": {
     "toolbar": false
+    // "focus": true
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

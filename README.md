@@ -5,7 +5,7 @@ GulpIDE
 
 这是整合了[livereload功能](http://lufeng.me/post/livereload)的GUI程序，用于前端开发的预处理task runner，如果你用过grunt,可以理解为是grunt的图形界面程序，实际是使用[gulpjs]()，gulpjs和grunt一样，也是一个task runner，但gulp是基于流的操作，比grunt更高效、更简洁。
 
-项目使用node-webkit构建，目前只写好了windows的alpha版本([下载地址](http://pan.baidu.com/s/1hqy0DRA))，对于bug和建议，欢迎提交[issue](https://github.com/keith3/GulpIDE/issues)。
+项目使用node-webkit构建，目前只写好了windows的alpha版本([下载地址](http://pan.baidu.com/s/1dDzSLZb))，对于bug和建议，欢迎提交[issue](https://github.com/keith3/GulpIDE/issues)。
 
 由于前期准备不足，不熟悉node-webkit，导致目前的代码写的比较糟糕，近期将使用Angular或者Backbone重写。
 
@@ -39,11 +39,11 @@ GulpIDE
 
 ##ToDo
 
-- 快捷键绑定
-- gulpfile编辑区域完善
-- task list显示全部任务,任务可以分别运行
-- 生成新项目时自定义项目目录结构
-- 多个项目任务同时运行
+- [x] 快捷键绑定
+- [ ] gulpfile编辑区域完善
+- [ ] task list显示全部任务,任务可以分别运行
+- [ ] 生成新项目时自定义项目目录结构
+- [ ] 多个项目任务同时运行
 
 ##使用说明
 

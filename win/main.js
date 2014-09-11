@@ -18,9 +18,9 @@ var fileStatus = "Edit...";
 init();
 isWin ? delimiter = '\\' : delimiter = '/';
 function init() {
-    if (typeof localStorage.firstLogin === 'undefined' || localStorage.firstLogin) {
+    if (typeof localStorage.firstLogin === 'undefined') {
         childProcess.exec('npm --version', function(err, stdout, stderr) {
-            if (err) alert('You have to install npm first, if you have installed npm check if it\'s added in PATH. ');
+            if (err) alert('You have to install node.js first, if you have installed npm check if it\'s added in PATH. ');
             else localStorage.firstLogin = false;
         })
     }

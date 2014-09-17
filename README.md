@@ -7,7 +7,7 @@ GulpIDE
 
 项目使用node-webkit构建，目前只写好了windows的alpha版本([下载地址](http://pan.baidu.com/s/1dDzSLZb))，对于bug和建议，欢迎提交[issue](https://github.com/keith3/GulpIDE/issues)。
 
-由于前期准备不足，不熟悉node-webkit，导致目前的代码写的比较糟糕，近期将使用Angular或者Backbone重写。
+由于前期准备不足，不熟悉node-webkit，导致目前的代码写的比较糟糕，近期将使用Angular重写。
 
 ##软件功能
 

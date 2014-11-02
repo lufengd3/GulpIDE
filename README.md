@@ -31,10 +31,6 @@ GulpIDE
 		- 没有则将你的项目拷贝到一个临时文件夹下，然后同新建项目过程相同
 			- 新建完成后将临时文件夹的内容移动到新建项目的app文件夹下
 
-##已知问题
-
-- 新建项目窗口，选择目录的input，本应该设置一个button，将file的input元素隐藏，button的click事件触发file元素，file的change事件获取file值并填充到name="location"的input区域，像主页menu的new project就是这样做的，但是在这里change事件不能触发。 
-
 ##ToDo
 
 - [x] 快捷键绑定,ctrl+n新建项目，ctrl+o打开已有项目, ctrl+s保存编辑区gulpfile.js文件
@@ -49,7 +45,7 @@ GulpIDE
 2. 运行Gulp IDE.exe
 3. file-->new project
 ![new project](img/newProject.png)
-填写项目名称，选择项目位置，勾选所需库文件、任务流，OK，如果ni请耐心等待，
+填写项目名称，选择项目位置，勾选所需库文件、任务流，OK，请耐心等待安装npm modules.
 4. 配置gulpfile.js，应用中间区域为gulp配置文件gulpfils.js编辑区，左侧Projects目录为项目目录树，右侧Tasts为gulp任务控制区域，下方是gulp执行日志
 ![idelook](img/idelook.png)
 5. `Start Server`开始运行，此时会以app文件夹为根目录，开启一个浏览器访问程序页面，当app目录下代码文件发生改变时，浏览器会自动刷新。

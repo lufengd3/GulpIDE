@@ -1,3 +1,5 @@
+# Node-webkit应用Demo
+
 GulpIDE
 =======
 
@@ -31,13 +33,6 @@ GulpIDE
 		- 没有则将你的项目拷贝到一个临时文件夹下，然后同新建项目过程相同
 			- 新建完成后将临时文件夹的内容移动到新建项目的app文件夹下
 
-##ToDo
-
-- [x] 快捷键绑定,ctrl+n新建项目，ctrl+o打开已有项目, ctrl+s保存编辑区gulpfile.js文件
-- [ ] gulpfile编辑区域完善
-- [ ] task list显示全部任务,任务可以分别运行
-- [ ] 生成新项目时自定义项目目录结构
-- [ ] 多个项目任务同时运行
 
 ##开始使用
 1. 此软件依赖于[Node.js](http://nodejs.org)，npm包管理器，npm第三方包[gulp.js](http://gulpjs.com/)，请先安装以上依赖程序，此应用才可正常运行。
